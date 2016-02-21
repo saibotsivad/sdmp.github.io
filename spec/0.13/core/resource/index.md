@@ -1,6 +1,6 @@
 ---
 version: 0.13
-parent: journal
+parent: core
 layout: spec
 title: resource
 subtitle: Published objects are called resources.
