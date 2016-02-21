@@ -120,7 +120,7 @@ Example: `0.13`
 Each array element of this property must be a [UTF-8](http://www.utf-8.com/)
 encoded string which must be either:
 
-1. a valid [SDMP resource URI](../../journal/resource#resource-uri), which must
+1. a valid [SDMP resource URI](../resource#resource-uri), which must
 	resolve to a valid [JSON schema](http://json-schema.org/), or
 2. one of the string values of the [core schema names](#core-schema-names).
 

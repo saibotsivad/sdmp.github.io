@@ -7,7 +7,7 @@ subtitle: Structure of the journal.
 ---
 
 
-Each node maintains an ordered list of the [resources](../../journal/resource)
+Each node maintains an ordered list of the [resources](../../core/resource)
 it publishes, as well as all resources published by any
 [trusted node](../../schema/trust).
 This ordered list is called the *journal*. It is unique per node, and is
@@ -29,7 +29,7 @@ journal is constructed by concatenating:
 * the [key fingerprint](../../core/cryptography#key-fingerprint) of
   the node publishing the resource, then
 * a single forward slash character (`/`), then
-* the [resource identifier](../../journal/resource#resource-identifier)
+* the [resource identifier](../../core/resource#resource-identifier)
   of the resource being published.
 
 View example journal entries [here](#example-journal).
@@ -75,12 +75,12 @@ The first line of the journal must be the
 of the node.
 
 The second line of the journal must be calculated using the
-[resource identifier](../../journal/resource#resource-identifier)
+[resource identifier](../../core/resource#resource-identifier)
 of the[identity resource](../../core/identity) of the user
 authorizing the node.
 
 The third line of the journal must be calculated the
-[resource identifier](../../journal/resource#resource-identifier)
+[resource identifier](../../core/resource#resource-identifier)
 of the [trust resource](../../schema/trust) authorizing the node
 on behalf of some user.
 

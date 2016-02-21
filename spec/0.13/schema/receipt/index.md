@@ -20,8 +20,8 @@ This object contains the following properties:
 
 ###### `receipt` *(string, required)*
 
-The [resource identifier](../../journal/resource#resource-identifier) of the
-[message](../message) or [resource](../../journal/resource) received.
+The [resource identifier](../../core/resource#resource-identifier) of the
+[message](../message) or [resource](../../core/resource) received.
 
 ---
 

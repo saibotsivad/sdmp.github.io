@@ -8,7 +8,7 @@ subtitle: Nodes requesting specific published resources from other nodes.
 
 
 Nodes transmit [journal updates](../../journal/broadcast) to other nodes,
-but do not automatically transmit the [resources](../../journal/resource).
+but do not automatically transmit the [resources](../../core/resource).
 It is the responsibility of the node receiving the journal update to
 request resources it does not have.
 
@@ -17,7 +17,7 @@ request resources it does not have.
 ## Request Object
 
 When a resource request is transmitted, it must be sent inside of
-a valid [resource](../../journal/resource) object, which must be signed
+a valid [resource](../../core/resource) object, which must be signed
 by the node sending the request.
 
 ---
@@ -50,7 +50,7 @@ who published the resource being requested.
 
 ###### `request.resource` *(string, required)*
 
-The [resource identifier](../../journal/resource#resource-identifier) of
+The [resource identifier](../../core/resource#resource-identifier) of
 the resource being requested.
 
 ---

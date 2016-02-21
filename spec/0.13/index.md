@@ -12,9 +12,9 @@ says means:
 > Major version zero (`0.y.z`) is for initial development. Anything may change
 > at any time. The public API should not be considered stable.
 
-Please see the [roadmap](/roadmap) for more detailed release plans,
-and the [contributing guideline](/contributing) for information
-on how to get involved.
+Please see the [roadmap](/roadmap) for more detailed release plans, and the
+[contributing guideline](https://github.com/sdmp/sdmp.github.io/blob/master/CONTRIBUTING.md)
+for information on how to get involved.
 
 ---
 
@@ -27,8 +27,8 @@ on how to get involved.
 	- [Identity](./core/identity): Public keys used to identify users or nodes.
 	- [Encrypted](./core/container): A container holding encrypted data.
 	- [Signature](./core/signature): A container holding signed data.
+	- [Resource](./core/resource): The thing published is a signature container.
 * [Journal](./journal): Publishing resources to other users or nodes.
-	- [Resource](./journal/resource): The thing published is a signature container.
 	- [Structure](./journal/structure): Each node maintains its own journal.
 	- [Broadcast](./journal/broadcast): How the resources get published.
 	- [Request Journal](./journal/request_journal): Nodes request updated journal lists.

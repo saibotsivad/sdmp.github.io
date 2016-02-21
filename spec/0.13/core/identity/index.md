@@ -8,7 +8,7 @@ subtitle: Establish a cryptographic identity by publishing a public key.
 
 
 Establishing a cryptographic identity is done by creating and publishing
-a [public key](../cryptography) as a [resource](../../journal/resource).
+a [public key](../cryptography) as a [resource](../resource).
 
 When published as a resource, the resource must be signed by the private
 key of this identity key pair. 

@@ -15,12 +15,12 @@ objects containing information about the publisher of the data.
 Each node maintains its own journal, which is a list of known
 resources, ordered by the time the node verified the resource.
 
-## [Resources](./resource)
+<!-- ## [Resources](./resource)
 
 Journal entries reference published resources, which are
 [signature](../core/signature) objects containing valid
 [containers](../core/container) with some additional information
-about the publisher.
+about the publisher. -->
 
 ## [Broadcast](./broadcast)
 

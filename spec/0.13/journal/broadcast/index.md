@@ -9,7 +9,7 @@ subtitle: Broadcast journal updates to other nodes.
 
 As part of the synchronization process, nodes transmit journal
 updates to other nodes. In this way, nodes can transmit knowledge
-of a published [resource](../../journal/resource) without needing to
+of a published [resource](../../core/resource) without needing to
 transmit the resource itself.
 
 ---
@@ -17,7 +17,7 @@ transmit the resource itself.
 ## Broadcast Object
 
 When a journal update is transmitted, it must be sent inside of
-a valid [resource](../../journal/resource) object, which must be signed
+a valid [resource](../../core/resource) object, which must be signed
 by the node sending the update.
 
 ---
@@ -29,7 +29,7 @@ This schema is used when a node responds to a
 or when a node periodically sends a journal update
 to other nodes.
 
-The deserialized [resource payload](../../journal/resource#payload) object
+The deserialized [resource payload](../../core/resource#payload) object
 contains the list of [journal entries](../../journal/structure#journal-entries)
 that it has added since the last time it broadcast to the particular node.
 

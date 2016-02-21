@@ -29,7 +29,7 @@ There are two identities: users and nodes. Users authorize nodes to publish
 content. An identity is the container object with the public key of the user
 or node. Users authorize nodes to publish content by signing a trust.
 
-## [Encryption/Decryption](./encryption)
+## [Encryption/Decryption](./encrypted)
 
 Encryption of an object is done by generating an [AES][aes] key, encrypting
 the data to that key, and then encrypting the AES key to the public key of
@@ -39,6 +39,11 @@ all recipients. Decryption is the reverse.
 
 RSA signatures are stored in containers. The signed data must be a container
 object.
+
+## [Resource](./resource)
+
+Published objects require a few additional properties, and can be referenced
+by a URI.
 
 [rsa]: https://en.wikipedia.org/wiki/RSA_(cryptosystem)
 [sha2]: https://en.wikipedia.org/wiki/SHA-2

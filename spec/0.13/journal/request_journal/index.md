@@ -16,7 +16,7 @@ node may also request the journal entries of another node.
 ## Request Object
 
 When a journal update request is transmitted, it must be sent inside
-of a valid [resource](../../journal/resource) object, which must be signed
+of a valid [resource](../../core/resource) object, which must be signed
 by the node sending the request.
 
 ---

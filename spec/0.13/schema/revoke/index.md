@@ -51,8 +51,8 @@ This contains the following reserved properties:
 
 ###### `revoke.resource` *(string, required)*
 
-The [resource identifier](../../journal/resource#resource-identifier)
-of the [resource](../../journal/resource) being revoked.
+The [resource identifier](../../core/resource#resource-identifier)
+of the [resource](../../core/resource) being revoked.
 
 ###### `revoke.authorization` *(string, optional)*
 
@@ -60,7 +60,7 @@ If the revocation is being published by an identity other than
 the identity used to publish the original resource, this value
 must be present.
 
-This value is the [resource identifier](../../journal/resource#resource-identifier)
+This value is the [resource identifier](../../core/resource#resource-identifier)
 of the [trust](../../schema/trust) resource giving this identity
 authorization to revoke the resource.
 

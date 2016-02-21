@@ -16,7 +16,7 @@ lists the actions that identity can take.
 
 ## Trusts
 
-Trusts are [resources](../../journal/resource) created by
+Trusts are [resources](../../core/resource) created by
 [identities](../../core/identity), and list the actions
 authorized by the trust.
 
@@ -38,7 +38,7 @@ been given the `read_resource` authorization by the user.
 
 ### `publish_resource`
 
-When verifying published [resources](../../journal/resource) claiming
+When verifying published [resources](../../core/resource) claiming
 to originate from another user, only those resources signed by
 keys authorized with `publish_resource` should be accepted as valid.
 

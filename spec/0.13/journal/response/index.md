@@ -15,7 +15,7 @@ inside a response object.
 ## Response Object
 
 When a response is transmitted, it must be sent inside of a valid
-[resource](../../journal/resource) object, which must be signed by the
+[resource](../../core/resource) object, which must be signed by the
 node sending the resource.
 
 ---
@@ -55,7 +55,7 @@ in the [request object](../../journal/request_resource).
 ###### `response.data` *(object)*
 
 If the value `response.status` is `ok`, this object must be the requested
-[resource object](../../journal/resource) or the requested
+[resource object](../../core/resource) or the requested
 [journal update](../../journal/broadcast).
 
 In all other cases, this property must not be set.
