@@ -1,5 +1,5 @@
 ---
-version: 0.12
+version: 0.13
 parent: journal
 layout: spec
 title: structure
@@ -7,7 +7,7 @@ subtitle: Structure of the journal.
 ---
 
 
-Each node maintains an ordered list of the [resources](../../journal/resource)
+Each node maintains an ordered list of the [resources](../../core/resource)
 it publishes, as well as all resources published by any
 [trusted node](../../schema/trust).
 This ordered list is called the *journal*. It is unique per node, and is
@@ -29,7 +29,7 @@ journal is constructed by concatenating:
 * the [key fingerprint](../../core/cryptography#key-fingerprint) of
   the node publishing the resource, then
 * a single forward slash character (`/`), then
-* the [resource identifier](../../journal/resource#resource-identifier)
+* the [resource identifier](../../core/resource#resource-identifier)
   of the resource being published.
 
 View example journal entries [here](#example-journal).
@@ -75,12 +75,12 @@ The first line of the journal must be the
 of the node.
 
 The second line of the journal must be calculated using the
-[resource identifier](../../journal/resource#resource-identifier)
+[resource identifier](../../core/resource#resource-identifier)
 of the[identity resource](../../core/identity) of the user
 authorizing the node.
 
 The third line of the journal must be calculated the
-[resource identifier](../../journal/resource#resource-identifier)
+[resource identifier](../../core/resource#resource-identifier)
 of the [trust resource](../../schema/trust) authorizing the node
 on behalf of some user.
 
@@ -107,7 +107,7 @@ If the node then publishes two resources from that user, and those resource iden
 	vAlCSyzreTo0Glh8pum7WgOOu-O2zhxYgMIN9AGP65vIW0xCvAAw-nR8Wt9rFpCDVJOU91Y__ZZffDFK38aA8Q
 
 The complete node journal would look like this (view the raw text
-file [here](./example-journal.txt)):
+file [here](../example-journal.txt)):
 
 	0lCSyum7GlvAreToWzh8pzhxgO2N95AAYOOu-gMIwAGP6-nR0t9rF_ZZ8xCvWvIWfpCY_fDVU91A8Q38JDFKaO
 	22tfYa3Xy3-G2vbAh4vxiJPqJk4iLU6FBmqx5Tsw7rGgEWxEHmocPhRZ2s-6Ww1na3DV6JdwU22OJukbtfDXDw@GlvAreTo0lCSyum7Wzh8pzhxYOOu-gMIgO2N95AAwAGP6-nR8xCvWvIW0t9rF_ZZfpCY_fDV38JDFKaOU91A8Q/QqsKcr29oKYsY8a4-asK5NT7dQXQ1_BG1b4MbvdXDPLM786YMlrFJdxQy8M2kjzCqzm3tvzQeQptEr_u-fkX_g

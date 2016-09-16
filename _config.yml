@@ -1,3 +1,13 @@
 version: "0.12"
+markdown: kramdown
 kramdown:
   smart_quotes: [ "apos", "apos", "quot", "quot" ]
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+exclude: [ "Gemfile", "Gemfile.lock", "README.md", "CONTRIBUTING.md", "NOTES.md", "/NOTES" ]
+include: [ ".well-known" ]
+name: "SDMP"
+description: "A software and network agnostic protocol for distributing messages across a cryptographically secure, peer-to-peer network."
+url: "http://sdmp.io"
+permalink: pretty
