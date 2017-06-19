@@ -4,8 +4,6 @@ subtitle: Development version release
 layout: spec
 ---
 
-# {{ site.data.schema.container.description }}
-
 ## Release Notes
 
 Please note that this release is still major version `0`, which [semver][semver]
@@ -20,34 +18,7 @@ for information on how to get involved.
 
 ---
 
-## Summary
-
-* All network traffic is encrypted using 256-bit AES session keys.
-* Session keys and content is signed using 2048-bit RSA keys.
-* SHA-512 is used for content hashing and key fingerprints.
-* Decentralization is accomplished using a type of gossip protocol
-	to synchronize content to trusted peers.
-
 ## Table of Contents
-
-* [Cryptography](./cryptography): Algorithms used for keys, encryption, and hashing.
-* [Container](./container): Extendable, programmatically defined JSON objects.
-* [Network Session](./network-session): Establishing and using a session key
-	for network communications.
-* [Network Traffic](./network-traffic): Restrictions on network communication
-	while using established session keys.
-
-TODO
-* [Schema](./schema): All container extensions core to the protocol.
-* [Resource](./resource): stuff
-
-TODO is this even appropriate if I am going to try focusing on the
-identity and identity proof aspect primarily?
-* [Synchronization](./synchronization)
-
-
-
-
 
 * [Introduction](./introduction): A less formal summarization of the protocol.
 * [Core](./core): The core technology used by this protocol.

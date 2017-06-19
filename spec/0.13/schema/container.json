@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "[SDMP 0.10.1](http://sdmp.github.io/) Container Payload Schema",
+  "description": "Schema for the SDMP [container payload object](http://sdmp.github.io/docs/container/) object.",
+  "type": "object",
+  "properties": {
+    "sdmp": {
+      "description": "The root property of the object, which describes the payload object.",
+      "type": "object",
+      "properties": {
+        "version": {
+          "description": "The version of the SDMP specifications used to generate and validate the payload object. The property must be a valid [semver number](http://semver.org/).",
+          "type": "string"
+        },
+        "publisher": {
+          "description": "The [key fingerprint](http://sdmp.github.io/docs/cryptography/#key-fingerprint) of the user or node that generated and signed the container.",
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]+$"
+        },
+        "created": {
+          "description": "Timestamp the container was created. The time must be the local time of the publisher, translated to UTC. The timestamp is [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) formatted, with granularity to the millisecond. E.g., `2015-07-26T15:48:37.703Z`.",
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "schemas": {
+          "description": "An ordered array of strings.",
+          "type": "array",
+          "items": {
+            "description": "Must be either a valid [URI](https://tools.ietf.org/html/rfc3986), which should resolve to a valid [JSON schema file](http://json-schema.org/), or one of the SDMP reserved schema names.",
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [ "version", "publisher", "created", "schemas" ]
+    }
+  },
+  "required": ["sdmp"]
+}
